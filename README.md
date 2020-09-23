@@ -21,11 +21,10 @@ Raspi: https://www.amazon.de/Raspberry-Pi-ARM-Cortex-A72-Bluetooth-Micro-HDMI/dp
   Julia
   
 <h3>Arduino Programmierung</h3>
-  Jannes
+  Tilo
   Till
  
 <h3>Server & Website Programmierung</h3>
   Merlin
-  Tilo
   Klaas
 
