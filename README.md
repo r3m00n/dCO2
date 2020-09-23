@@ -17,14 +17,14 @@ Raspi: https://www.amazon.de/Raspberry-Pi-ARM-Cortex-A72-Bluetooth-Micro-HDMI/dp
 
 <h2>Aufgaben</h2>
 
-<h3>3D Druck und Hardware<h3>
+<h3>3D Druck und Hardware</h3>
   Julia
   
-<h3>Arduino Programmierung<h3>
+<h3>Arduino Programmierung</h3>
   Jannes
   Till
  
-<h3>Server & Website Programmierung<h3>
+<h3>Server & Website Programmierung</h3>
   Merlin
   Tilo
   Klaas
