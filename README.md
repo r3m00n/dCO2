@@ -13,3 +13,19 @@ Kabel: https://www.amazon.de/Ladekabel-Schnellladekabel-Datenkabel-Samsung-Motor
 Raspi Netzteil: https://www.amazon.de/Raspberry-Pi-offizielles-Netzteil-Model/dp/B07TMPC9FG/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1X31DNP67FP7O&dchild=1&keywords=rasperi+pi+netzteil&qid=1600861286&sprefix=rasperi+pi+netzt%2Caps%2C197&sr=8-3
 
 Raspi: https://www.amazon.de/Raspberry-Pi-ARM-Cortex-A72-Bluetooth-Micro-HDMI/dp/B07TC2BK1X/ref=sr_1_3?dchild=1&keywords=raspberry+pi+4&qid=1600861169&sr=8-3
+
+
+<h2>Aufgaben</h2>
+
+<h3>3D Druck und Hardware<h3>
+  Julia
+  
+<h3>Arduino Programmierung<h3>
+  Jannes
+  Till
+ 
+<h3>Server & Website Programmierung<h3>
+  Merlin
+  Tilo
+  Klaas
+
