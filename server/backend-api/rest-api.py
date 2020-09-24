@@ -46,13 +46,13 @@ class MeasuredValue(Resource):
         return '', 201
 class AvaiableSensors(Resource):
     def get(self):
-        f = []
+        files = []
         for (_, _, filenames) in os.walk(BASE_PATH+"/data/"):
-            f.extend(filenames)
+            files.extend(filenames)
             break
-        for i in range(0,len(f)):
-            f[i] = f[i].split('.')[0]
-        names_of_sensors = {"names":f}
+        for i in range(0,len(files)):
+            files[i] = files[i].split('.')[0]
+        names_of_sensors = {"names":files}
         return names_of_sensors
 
 

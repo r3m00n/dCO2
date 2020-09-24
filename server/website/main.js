@@ -17,6 +17,7 @@ function loadSensors(){
   }
 
 function buttonClicked(id){
+
     var url = "http://localhost:5000/co2/" + id;
     google.charts.load('current', {'packages':['annotationchart']});
     google.charts.setOnLoadCallback(drawChart);
@@ -28,18 +29,17 @@ function buttonClicked(id){
         request.onload = function() {
         if (request.status >= 200 && request.status < 400) {
 
-        var jsonData = JSON.parse(request.responseText);
-        var dataArray = convertToNumber(CSVToArray(jsonData['csv'].replace(/\n$/, "")));
-        var data = google.visualization.arrayToDataTable(dataArray);
+        var SensorDataJSON = JSON.parse(request.responseText);
+        var SensorDataArray = convertToNumberAndDate(CSVToArray(SensorDataJSON['csv'].replace(/\n$/, "")));
+        var SensorDataTable = google.visualization.arrayToDataTable(SensorDataArray);
 
         var options = {
-            title: 'CO2 Gehalt',
             displayAnnotations: true
             
         };
 
         var chart = new google.visualization.AnnotationChart(document.getElementById('curve_chart'));
-        chart.draw(data, options);
+        chart.draw(SensorDataTable, options);
 
         } else {
         console.log("Fetching Data failed." + request.status);
@@ -52,20 +52,22 @@ function buttonClicked(id){
 
         request.send();
 
+        var SensorButton = document.querySelector(".dropbtn");
+        SensorButton.textContent = id
 
     }
 }
 
-  var CSVToArray = function CSVToArray(data, delimiter=",", omitFirstRow=false) {
-      return data
-          .slice(omitFirstRow ? data.indexOf("\n") + 1 : 0)
+  var CSVToArray = function CSVToArray(csvString, delimiter=",", omitFirstRow=false) {
+      return csvString
+          .slice(omitFirstRow ? csvString.indexOf("\n") + 1 : 0)
           .split("\n")
           .map(function(v) {
               return v.split(delimiter);
           });
   };
 
-  function convertToNumber(array){
+  function convertToNumberAndDate(array){
     for (i = 1; i < array.length; i++){
       array[i][1] = parseInt(array[i][1]);
       array[i][0] = new Date(array[i][0]);
