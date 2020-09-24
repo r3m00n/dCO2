@@ -26,13 +26,13 @@
           [new Date(2314, 2, 20), 0,
                                   79463,]
         ]);
-
+        
         var chart = new google.visualization.AnnotationChart(document.getElementById('chart_div'));
 
         var options = {
           displayAnnotations: true
         };
-
+        console.log(data);
         chart.draw(data, options);
       }
     </script>

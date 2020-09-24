@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
 from flask_cors import CORS
-import csv, os, datetime
+import csv, os, datetime, json
 
 BASE_PATH = path = os.path.dirname(__file__)
 
@@ -44,9 +44,20 @@ class MeasuredValue(Resource):
             writer.writerow([now, args['value']])
 
         return '', 201
+class AvaiableSensors(Resource):
+    def get(self):
+        f = []
+        for (_, _, filenames) in os.walk(BASE_PATH+"/data/"):
+            f.extend(filenames)
+            break
+        for i in range(0,len(f)):
+            f[i] = f[i].split('.')[0]
+        names_of_sensors = {"names":f}
+        return names_of_sensors
+
 
 api.add_resource(MeasuredValue, "/co2/<string:id>")
-
+api.add_resource(AvaiableSensors, "/co2/overview")
 if __name__ =="__main__":
     app.run(host='0.0.0.0', debug=True)
 
