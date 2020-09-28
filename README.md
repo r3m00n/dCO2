@@ -19,7 +19,9 @@
 <code>service apache2 start</code> <br/>
 
 <h3>Daten an Server schicken / Daten auslesen</h3>
-<p>POST Request an <code>host:5000/co2/[RaumID]</code> <br/> mit JSON <code>{"value":[value]}</code></p>
+<p>POST Request an <code>[HOST-IP]:5000/co2/[RaumID]</code> <br/> mit JSON <code>{"value":[value]}</code></p>
+<p>GET Request an <code>[HOST-IP]:5000/co2/[RaumID]</code> <br/> Antwort als csv<code>{"csv":[csv_String]}</code></p>
+
 
 ESP: https://www.amazon.de/AZDelivery-D1-Mini-NodeMcu-Parent/dp/B01N9RXGHY?th=1
 
