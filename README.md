@@ -6,7 +6,7 @@
 
 <code>sudo apt install python3 python3-pip</code> <br/>
 <code>pip3 install flask flask_restful flask_cors</code> <br/>
-<code>git clone ~/ https://github.com/r3m00n/dCO2.git</code> <br/>
+<code>git clone https://github.com/r3m00n/dCO2.git ~/dCO2/</code> <br/>
 <code>cd dCO2/server/backend-api</code> <br/>
 <code>python3 rest-api.py</code><br/>
 
