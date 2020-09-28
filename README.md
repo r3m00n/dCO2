@@ -20,8 +20,10 @@
 
 <h2>Betrieb</h2>
 
-<h3>Daten an Server schicken / Daten auslesen</h3>
+<h3>Daten an Server schickenDaten auslesen</h3>
 <p>POST Request an <code>[HOST-IP]:5000/co2/[RaumID]</code> <br/> mit JSON <code>{"value":[value]}</code></p>
+
+<h3>Daten auslesen</h3>
 <p>GET Request an <code>[HOST-IP]:5000/co2/[RaumID]</code> <br/> Antwort als JSON<code>{"csv":[csv_String]}</code></p>
 
 <h3>Übersicht aller Raum-IDs</h3>
