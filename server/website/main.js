@@ -1,5 +1,5 @@
 function loadSensors(){
-    HOST = "192.168.50.25"
+    HOST = "192.168.50.25" // <===== Enter IP here
     fetch("http://"+ HOST +":5000/co2/overview")
     .then((response) =>{
       return response.json();
@@ -18,7 +18,7 @@ function loadSensors(){
   }
 
 function buttonClicked(id){
-    var HOST = "192.168.50.25"
+    var HOST = "192.168.50.25" // <===== Enter IP here
     var url = "http://" + HOST + ":5000/co2/" + id;
     google.charts.load('current', {'packages':['annotationchart']});
     google.charts.setOnLoadCallback(drawChart);
