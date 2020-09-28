@@ -1,6 +1,22 @@
 <h1>dCO2</h1>
 
+<h2>Installation</h2>
 
+<h3>Backend auf Raspi</h3>
+
+<code>sudo apt install python3 python3-pip</code>
+<code>pip3 install flusk flusk_restful flask_cors</code>
+<code>git clone ~/ https://github.com/r3m00n/dCO2.git</code>
+<code>cd dCO2/server/backend-api</code>
+<code>python3 rest-api.py</code>
+
+<h3>Website</h3>
+
+<code>sudo apt install apache2</code>
+<code>sudo rm /var/www/html/index.html</code>
+<code>cp ~/dCO2/server/website/* /var/www/html/</code>
+<code>sudo chown www-data:www-data /var/www/html/*</code>
+<code>service apache2 start</code>
 
 ESP: https://www.amazon.de/AZDelivery-D1-Mini-NodeMcu-Parent/dp/B01N9RXGHY?th=1
 
