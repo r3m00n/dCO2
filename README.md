@@ -18,6 +18,9 @@
 <code>sudo chown www-data:www-data /var/www/html/*</code> <br/>
 <code>service apache2 start</code> <br/>
 
+<h3>Daten an Server schicken / Daten auslesen</h3>
+<p>POST Request an host:5000/co2/[RaumID] <br/> mit JSON {"value":[value]}</p>
+
 ESP: https://www.amazon.de/AZDelivery-D1-Mini-NodeMcu-Parent/dp/B01N9RXGHY?th=1
 
 Sensor: https://www.neoe.io/products/mq135-luftqualitats-sensor-fur-arduino-nodemcu?variant=32413256482909&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=EAIaIQobChMIzdq8s5f_6wIVRuR3Ch1VHAwaEAQYBSABEgLDlfD_BwE oder https://www.amazon.de/iHaospace-MH-Z19-Infrared-Sensor-Monitor/dp/B072C6M181
