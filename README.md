@@ -19,7 +19,7 @@
 <code>service apache2 start</code> <br/>
 
 <h3>Daten an Server schicken / Daten auslesen</h3>
-<p>POST Request an host:5000/co2/[RaumID] <br/> mit JSON {"value":[value]}</p>
+<p>POST Request an <code>host:5000/co2/[RaumID]</code> <br/> mit JSON <code>{"value":[value]}</code></p>
 
 ESP: https://www.amazon.de/AZDelivery-D1-Mini-NodeMcu-Parent/dp/B01N9RXGHY?th=1
 
