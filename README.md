@@ -11,7 +11,7 @@
 <code>python3 rest-api.py</code><br/>
 
 <h3>Website</h3>
-
+<p><strong>WICHTIG:</strong>IP Adresse von Raspi-Server in main.js eintragen </p>
 <code>sudo apt install apache2</code> <br/>
 <code>sudo rm /var/www/html/index.html</code> <br/>
 <code>sudo cp ~/dCO2/server/website/* /var/www/html/</code> <br/>
