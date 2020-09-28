@@ -18,10 +18,16 @@
 <code>sudo chown www-data:www-data /var/www/html/*</code> <br/>
 <code>service apache2 start</code> <br/>
 
+<h2>Betrieb</h2>
+
 <h3>Daten an Server schicken / Daten auslesen</h3>
 <p>POST Request an <code>[HOST-IP]:5000/co2/[RaumID]</code> <br/> mit JSON <code>{"value":[value]}</code></p>
-<p>GET Request an <code>[HOST-IP]:5000/co2/[RaumID]</code> <br/> Antwort als csv<code>{"csv":[csv_String]}</code></p>
+<p>GET Request an <code>[HOST-IP]:5000/co2/[RaumID]</code> <br/> Antwort als JSON<code>{"csv":[csv_String]}</code></p>
 
+<h3>Übersicht aller Raum-IDs</h3>
+<p>GET Request an <code>[HOST-IP]:5000/co2/overview</code> <br/> Antwort als JSON<code>{"names":[array_of_IDs]}</code></p>
+
+<br/><br/><br/>
 
 ESP: https://www.amazon.de/AZDelivery-D1-Mini-NodeMcu-Parent/dp/B01N9RXGHY?th=1
 
