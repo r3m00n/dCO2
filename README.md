@@ -14,7 +14,7 @@
 
 <code>sudo apt install apache2</code> <br/>
 <code>sudo rm /var/www/html/index.html</code> <br/>
-<code>cp ~/dCO2/server/website/* /var/www/html/</code> <br/>
+<code>sudo cp ~/dCO2/server/website/* /var/www/html/</code> <br/>
 <code>sudo chown www-data:www-data /var/www/html/*</code> <br/>
 <code>service apache2 start</code> <br/>
 
