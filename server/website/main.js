@@ -1,5 +1,6 @@
 function loadSensors(){
-    fetch("http://localhost:5000/co2/overview")
+    HOST = "192.168.50.25"
+    fetch("http://"+ HOST +":5000/co2/overview")
     .then((response) =>{
       return response.json();
     }) 
