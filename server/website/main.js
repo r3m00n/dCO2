@@ -1,6 +1,7 @@
 function loadSensors(){
     HOST = "192.168.50.25" // <===== Enter IP here
-    fetch("http://"+ HOST +":5000/co2/overview")
+    var url = "http://"+ HOST +":5000/co2/overview"
+    fetch(url)
     .then((response) =>{
       return response.json();
     }) 
@@ -24,42 +25,28 @@ function buttonClicked(id){
     google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
-        var request = new XMLHttpRequest();
-        request.open('GET', url, true);
-
-        request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-
-        var SensorDataJSON = JSON.parse(request.responseText);
-        var SensorDataArray = convertToNumberAndDate(CSVToArray(SensorDataJSON['csv'].replace(/\n$/, "")));
+        fetch(url)
+        .then((response) =>{
+          return response.json();
+        })
+        .then((data) =>{
+        var SensorDataArray = convertToNumberAndDate(CSVToArray(data['csv'].replace(/\n$/, "")));
         var SensorDataTable = google.visualization.arrayToDataTable(SensorDataArray);
-
         var options = {
             displayAnnotations: true
             
         };
-
         var chart = new google.visualization.AnnotationChart(document.getElementById('curve_chart'));
         chart.draw(SensorDataTable, options);
-
-        } else {
-        console.log("Fetching Data failed." + request.status);
-        }
-        };
-
-        request.onerror = function() {
-        // There was a connection error of some sort
-        };
-
-        request.send();
 
         var SensorButton = document.querySelector(".dropbtn");
         SensorButton.textContent = id
 
-    }
+    });
+  }
 }
 
-  var CSVToArray = function CSVToArray(csvString, delimiter=",", omitFirstRow=false) {
+  function CSVToArray(csvString, delimiter=",", omitFirstRow=false) {
       return csvString
           .slice(omitFirstRow ? csvString.indexOf("\n") + 1 : 0)
           .split("\n")
