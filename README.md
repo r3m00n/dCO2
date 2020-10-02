@@ -33,7 +33,10 @@
 <h2>Hardware</h2>
 ESP: https://www.amazon.de/AZDelivery-D1-Mini-NodeMcu-Parent/dp/B01N9RXGHY?th=1
 
-Sensor: https://www.neoe.io/products/mq135-luftqualitats-sensor-fur-arduino-nodemcu?variant=32413256482909&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=EAIaIQobChMIzdq8s5f_6wIVRuR3Ch1VHAwaEAQYBSABEgLDlfD_BwE oder https://www.amazon.de/iHaospace-MH-Z19-Infrared-Sensor-Monitor/dp/B072C6M181
+Sensor: MH-Z19
+https://www.banggood.com/search/mh-z19.html?from=nav&DCC=DE&currency=EUR
+
+https://www.neoe.io/products/mq135-luftqualitats-sensor-fur-arduino-nodemcu?variant=32413256482909&currency=EUR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=EAIaIQobChMIzdq8s5f_6wIVRuR3Ch1VHAwaEAQYBSABEgLDlfD_BwE oder https://www.amazon.de/iHaospace-MH-Z19-Infrared-Sensor-Monitor/dp/B072C6M181
 Temperatur, Luftfeuchtigkeit und Luftdruck https://www.amazon.de/AZDelivery-GY-BME280-Barometrischer-Temperatur-Luftfeuchtigkeit/dp/B07D8T4HP6/ref=pd_vtp_107_3/259-1043398-6623129?_encoding=UTF8&pd_rd_i=B07D8T4HP6&pd_rd_r=e79bcf5b-9eac-4d98-96f4-dfcbf4e3b167&pd_rd_w=Q6zAF&pd_rd_wg=Tosfe&pf_rd_p=80911889-e795-4970-aa72-4c8dbf7a55d0&pf_rd_r=FQ7B42TNX292FF1XV4EQ&psc=1&refRID=FQ7B42TNX292FF1XV4EQ
 
 Netzteil: https://www.amazon.de/AmazonBasics-USB-Ladeadapter-Anschluss-Ampere-Schwarz/dp/B0773J952F/ref=sr_1_10?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=usb+netzteil&qid=1600861337&sr=8-10
